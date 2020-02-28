@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="097a0907-ff33-4871-b57c-f6be114a74f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson15/Lesson15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson15/Lesson15.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -139,9 +143,9 @@
       <list>
         <item itemvalue="Application.Lesson15" />
         <item itemvalue="Application.Lesson14" />
-        <item itemvalue="Application.FunctionalInterface" />
-        <item itemvalue="Application.Lesson12" />
         <item itemvalue="Application.Lesson13" />
+        <item itemvalue="Application.Lesson12" />
+        <item itemvalue="Application.FunctionalInterface" />
       </list>
     </recent_temporary>
   </component>
