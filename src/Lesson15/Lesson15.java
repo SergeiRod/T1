@@ -7,11 +7,11 @@ import java.util.List;
 
 
 //Hello from develop1!!!
+//Hello from develop2!!!
 public class Lesson15 {
 
     public static void main(String[] args) {
-        //Comment form remote
-        //comment form local
+
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         String string1 = new String("str");
         String string2 = new String("str");
@@ -136,7 +136,6 @@ public class Lesson15 {
 
         findLongestShortestWord(textForHomeWork);
 
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
     }
