@@ -8,6 +8,7 @@ import java.util.List;
 public class Lesson15 {
 
     public static void main(String[] args) {
+        //Comment form remote
         //comment form local
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         String string1 = new String("str");
