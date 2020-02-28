@@ -134,6 +134,7 @@ public class Lesson15 {
         findLongestShortestWord(textForHomeWork);
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
     }
 
