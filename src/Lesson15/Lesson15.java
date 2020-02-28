@@ -174,6 +174,8 @@ public class Lesson15 {
         return Arrays.asList(split);
     }
 
+//git config --global user.email "srvsilver@yahoo.com"
+//git config --global user.email "SergeiRod"
 
 
 

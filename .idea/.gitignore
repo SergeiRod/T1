@@ -1,2 +1,14 @@
-# Default ignored files
-/workspace.xml
+.idea/
+out/
+.checkstyle
+.classpath
+.factorypath
+.project
+.settings/
+*.iml
+*.iws
+*.ids
+*.bat
+
+target/
+rebel.xml
