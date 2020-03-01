@@ -141,10 +141,15 @@ public class Lesson15 {
     }
 
     public static void findLongestShortestWord(String text) {
-        String[] stringText = text.split(" ");
+        String[] stringText = text.replace(".", "")
+                .replace(",", "").replace(";", "")
+                .replace(":", "").replace("!", "")
+                .replace("?", "").split(" ");
         List<String> listText = Arrays.asList(stringText);
-        listText.stream().mapToInt(w -> w.length()).forEach(System.out::println);
-
+        String numMax = listText.stream().max(Comparator.comparingInt(String::length)).get();
+        System.out.println(numMax);
+        String numMin = listText.stream().min(Comparator.comparingInt(String::length)).get();
+        System.out.println(numMin);
     }
 
 
