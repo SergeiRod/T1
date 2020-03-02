@@ -1,2 +1,15 @@
-# Project exclude paths
-/out/
+.idea/
+.checkstyle
+.classpath
+.factorypath
+.project
+.settings/
+*.iml
+*.iws
+*.ids
+*.bat
+
+target/
+rebel.xml
+
+webapp/src/main/resources/webapp/lib
