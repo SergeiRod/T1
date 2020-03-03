@@ -1,5 +1,8 @@
 package Lesson17;
 
+import Lesson11.generic.Citizen;
+import Lesson11.generic.Gender;
+import Lesson11.generic.Person;
 import Lesson14.CarManufacturers;
 import Lesson8.HomeWork8.Car;
 import Lesson8.HomeWork8.CarCondition;
@@ -10,6 +13,7 @@ import org.w3c.dom.ls.LSOutput;
 import javax.crypto.spec.PSource;
 import javax.imageio.IIOException;
 import java.io.*;
+import java.time.LocalDate;
 
 public class Lesson17 {
     public static void main(String[] args) {
@@ -17,12 +21,13 @@ public class Lesson17 {
         //System.out.println(car1);
         Car car2 = new PassengerCar(1991, CarManufacturers.MERCEDES_BENZ, CarCondition.GOOD, 5);
         System.out.println(car2);
-        car2.setYearOfRelease(1989);
-        System.out.println(car2);
+        //car2.setYearOfRelease(1989);
+        //System.out.println(car2);
         //Car car3 = new PassengerCar(1999, CarManufacturers.TOYOTA, CarCondition.GOOD, 5);
         //System.out.println(car3);
         //Car car4 = new PassengerCar(1999, CarManufacturers.ROLLS_ROYCE, CarCondition.BAD, 5);
         //System.out.println(car4);
+
 
 
 
@@ -103,6 +108,15 @@ public class Lesson17 {
             System.out.println(e.getMessage());
             System.out.println("send alert email...");
         }
+
+        Citizen citizen = new Citizen("Maria", Gender.FEMALE, "Mat", LocalDate.of(2003, 02, 01),true);
+        System.out.println("Customer age is "+citizen.getAgePerson());
+
+        System.out.println(citizen.randomCrimeGenerator());
+
+
+
+
     }
 }
 

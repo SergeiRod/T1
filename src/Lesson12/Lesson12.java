@@ -34,8 +34,8 @@ public class Lesson12 {
 
 
         Car car1 = new PassengerCar(2019, CarManufacturers.OPEL, CarCondition.EXCELLENT, 5);
-        Car car2 = new PassengerCar(2012,CarManufacturers.BMW, CarCondition.GOOD, 4);
-        Car car3 = new PassengerCar(2005,CarManufacturers.OPEL, CarCondition.BAD, 5);
+        Car car2 = new PassengerCar(2012,CarManufacturers.MERCEDES_BENZ, CarCondition.GOOD, 4);
+        Car car3 = new PassengerCar(2005,CarManufacturers.OPEL, CarCondition.GOOD, 5);
         Car car4 = new PassengerCar(2015,CarManufacturers.SKODA, CarCondition.EXCELLENT, 5);
 
         Map<String, Car> car = new HashMap<>(20);

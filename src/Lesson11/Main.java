@@ -114,7 +114,9 @@ public class Main {
         Person employee3 = new Employee("Sandra", 30, Gender.FEMALE, 50_000);
 
         Person citizen1 = new Citizen("Egor", 37, Gender.MALE, true);
-        Person citizen2 = new Citizen("Helga", 16, Gender.FEMALE, true);
+        Person citizen2 = new Citizen("Helga", 19, Gender.FEMALE, true);
+        //citizen2.setAge(17);
+        System.out.println("age exception test "+citizen2.getAge());
         Person citizen3 = new Citizen("Maria", 56, Gender.FEMALE, false);
 
         Set<Person> personSet = new HashSet<>();
@@ -238,6 +240,7 @@ public class Main {
         Collections.shuffle(personArrayList2);
         System.out.println("After Reverse " + personArrayList1);
         System.out.println("After Reverse " + personArrayList2);
+
 
 
 

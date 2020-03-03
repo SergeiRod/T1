@@ -164,9 +164,9 @@ public class FunctionalInterface {
         getAverageAge((c, e) -> Double.valueOf(c.getAge() + e.getAge()) / 2, citizen, employee);
         getAverageAge((c, e) -> new Double(c.getAge() + e.getAge()) / 2, citizen, employee); // тоже самое
 
-        Citizen mike = new Citizen("Mike", age, Gender.MALE, "Greenwood", LocalDate.of(1982, 10, 15), true);
-        Citizen jane = new Citizen("Jane", age, Gender.FEMALE, "Health", LocalDate.of(1979, 02, 22), true);
-        Person helen = new Citizen("Helen", age, Gender.FEMALE, "Block", LocalDate.of(1997, 10, 15), true);
+        Citizen mike = new Citizen("Mike",  Gender.MALE, "Greenwood", LocalDate.of(1982, 10, 15), true);
+        Citizen jane = new Citizen("Jane", Gender.FEMALE, "Health", LocalDate.of(1979, 02, 22), true);
+        Person helen = new Citizen("Helen", Gender.FEMALE, "Block", LocalDate.of(1997, 10, 15), true);
         Employee paul = new Employee("Paul", age, Gender.MALE, "Brucksen", LocalDate.of(2002, 12, 14), 20_000);
 
         System.out.println("=======================================================================");

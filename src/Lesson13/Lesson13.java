@@ -36,7 +36,7 @@ public class Lesson13 {
 
         System.out.println("orElseGet(Supplier<T>,t) form Optional" + otpEJoe.orElseGet(() -> citizenDefault));
         System.out.println("orElseGet(Supplier<T>,t) form Optional" + otpNullable.orElseGet(() ->
-                new Citizen("PPP", 33, Gender.FEMALE, true)
+                new Citizen("PPP", 19, Gender.FEMALE, true)
         ));
 
         otpEJoe.ifPresent((c)-> {
@@ -75,7 +75,7 @@ public class Lesson13 {
 
         System.out.println("orElseGet(Supplier<T>,t) form Optional" + otpBmw.orElseGet(() -> carDefault));
         System.out.println("orElseGet(Supplier<T>,t) form Optional" + otpCarNullable.orElseGet(() ->
-                new PassengerCar(1999, CarManufacturers.VOLKSWAGEN, CarCondition.BAD, 5)
+                new PassengerCar(1999, CarManufacturers.VOLKSWAGEN, CarCondition.GOOD, 5)
         ));
 
 

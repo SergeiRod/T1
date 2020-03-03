@@ -11,8 +11,11 @@ public abstract class Person {
     protected String secondName;
     protected LocalDate birthday;
 
-    public Person(String name, int age, Gender gender) {
+    public Person(String name, int age, Gender gender) throws IllegalArgumentException {
         this.name = name;
+        if (age < 18){
+                throw new IllegalArgumentException("You are to young!");
+            }
         this.age = age;
         this.gender = gender;
     }
@@ -25,6 +28,7 @@ public abstract class Person {
     }
 
     public abstract int getAgePerson();
+    public abstract int randomCrimeGenerator();
 
     public String getName() {
         return name;
@@ -39,7 +43,10 @@ public abstract class Person {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(int age) throws IllegalArgumentException{
+        if (age < 18){
+            throw new IllegalArgumentException("You are to young!");
+        }
         this.age = age;
     }
 
@@ -57,14 +64,6 @@ public abstract class Person {
 
     public void setSecondName(String secondName) {
         this.secondName = secondName;
-    }
-
-    public LocalDate getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
     }
 
 
