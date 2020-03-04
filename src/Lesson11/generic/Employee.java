@@ -31,16 +31,6 @@ public class Employee extends Person {
         return p.getYears();
     }
 
-    @Override
-    public int randomCrimeGenerator() {
-        int crime = (int) ((Math.random() *  10) );
-        if (crime < 5) {
-            System.out.println("Crime commit");
-        } else {
-            System.out.println("No crime commit");
-        }
-        return crime;
-    }
 
     @Override
     public String toString() {

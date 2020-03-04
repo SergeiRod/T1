@@ -5,7 +5,8 @@ import java.time.Period;
 import java.util.Random;
 
 public class Citizen extends Person {
-    boolean healthInsuranceStatus;
+    private boolean healthInsuranceStatus;
+
 
     public Citizen(String name, int age, Gender gender, boolean healthInsuranceStatus) {
         super(name, age, gender);
@@ -17,7 +18,6 @@ public class Citizen extends Person {
         super(name, gender, secondName, birthday);
         this.healthInsuranceStatus = healthInsuranceStatus;
         getAgePerson();
-        randomCrimeGenerator();
     }
 
     public boolean isHealthInsuranceStatus() {
@@ -37,23 +37,11 @@ public class Citizen extends Person {
             }
         }catch (IllegalArgumentException e) {
             e.printStackTrace();
-        }
+    }
         return ageCitizen;
 
     }
 
-    public int crime;
-
-    @Override
-    public int randomCrimeGenerator() {
-        crime = (int) ((Math.random() *  10) );
-        if (crime < 5) {
-            System.out.println("Crime commit");
-        } else {
-            System.out.println("No crime commit");
-        }
-        return crime;
-    }
 
 
     @Override

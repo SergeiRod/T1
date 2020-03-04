@@ -3,6 +3,7 @@ package Lesson17;
 import Lesson11.generic.Citizen;
 import Lesson11.generic.Gender;
 import Lesson11.generic.Person;
+import Lesson11.generic.PublicInsuranceCompany;
 import Lesson14.CarManufacturers;
 import Lesson8.HomeWork8.Car;
 import Lesson8.HomeWork8.CarCondition;
@@ -112,10 +113,14 @@ public class Lesson17 {
         Citizen citizen = new Citizen("Maria", Gender.FEMALE, "Mat", LocalDate.of(2003, 02, 01),true);
         System.out.println("Customer age is "+citizen.getAgePerson());
 
-        System.out.println(citizen.randomCrimeGenerator());
 
-
-
+        PublicInsuranceCompany insuranceCompany = new PublicInsuranceCompany();
+        try {
+            insuranceCompany.registerPolicyLocally(citizen);
+        } catch (CrimeException e){
+            e.printStackTrace();
+            System.out.println("You have tried to issue policy for the criminal!");
+        }
 
     }
 }
