@@ -1,11 +1,15 @@
 package Lesson11.generic;
 
+import com.sun.istack.internal.NotNull;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Predicate;
 
 public abstract class Person {
+    @NotNull
     protected String name;
+    @Deprecated
     protected int age;
     protected Gender gender;
     protected String secondName;
@@ -13,13 +17,15 @@ public abstract class Person {
     private boolean crime;
 
     public Person(String name, int age, Gender gender) throws IllegalArgumentException {
-        randomCrimeGenerator();
+
         this.name = name;
         if (age < 18) {
             throw new IllegalArgumentException("You are to young!");
         }
+
         this.age = age;
         this.gender = gender;
+        randomCrimeGenerator();
 
     }
 

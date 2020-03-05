@@ -5,6 +5,7 @@ import java.time.Period;
 
 public class Employee extends Person {
     private int income;
+    private int password = 99999;
 
 
     public Employee(String name, int age, Gender gender, int income) {
@@ -15,6 +16,11 @@ public class Employee extends Person {
     public Employee(String name, int age, Gender gender, String secondName, LocalDate birthday, int income) {
         super(name, gender, secondName, birthday);
         this.income = income;
+    }
+
+    private int exposeSecret (){
+        System.out.println("We hack the object .. ");
+        return password;
     }
 
     public int getIncome() {

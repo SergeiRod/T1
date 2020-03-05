@@ -5,11 +5,14 @@ public abstract class Employee {
     protected String name;
     protected long salary;
 
+
     public Employee(int age, String name, long salary) {
         this.age = age;
         this.name = name;
         this.salary = salary;
     }
+
+
 
     public int getAge() {
         return age;

@@ -17,6 +17,9 @@ public class PassengerCar extends Car {
     public PassengerCar(CarManufacturers manufacturer, CarCondition carCondition, LocalDate dateOfRelease) {
         super(manufacturer, carCondition, dateOfRelease);
     }
+    private void secretMethod(){
+        System.out.println("Secret methods");
+    }
 
     @Override
     public int getCarAge() {

@@ -13,6 +13,9 @@ public abstract class Car {
     protected CarCondition carCondition;
     protected LocalDate dateOfRelease;
 
+    public Car() {
+    }
+
     public Car(int yearOfRelease, CarManufacturers manufacturer, CarCondition carCondition) throws IllegalArgumentException {
         if (manufacturer == BMW || manufacturer == TOYOTA) {
             throw new IllegalArgumentException("Invalid Manufacturer");

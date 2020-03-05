@@ -18,6 +18,10 @@ public class Truck extends Car{
         this.bearingCapacity = bearingCapacity;
     }
 
+    private Truck() {
+        super();
+    }
+
     @Override
     public int getCarAge() {
         return Period.between(this.dateOfRelease, LocalDate.now()).getYears();
