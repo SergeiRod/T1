@@ -123,5 +123,6 @@ public class Lesson18 {
         Mark markObject = new Mark();
         MyLogProcessor.process(markObject);
 
+
     }
 }
