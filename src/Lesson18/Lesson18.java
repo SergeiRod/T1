@@ -20,7 +20,6 @@ public class Lesson18 {
     public static void main(String[] args) {
         Car car = new PassengerCar(CarManufacturers.BENTLEY, CarCondition.EXCELLENT, LocalDate.of(2001, 03, 04));
         PassengerCar car1 = new PassengerCar(CarManufacturers.BENTLEY, CarCondition.EXCELLENT, LocalDate.of(2001, 03, 04));
-        Object car2 = new PassengerCar(CarManufacturers.BENTLEY, CarCondition.EXCELLENT, LocalDate.of(2001, 03, 04));
         Class<?> carClass = car.getClass();
 
         System.out.println(".getName(): " + carClass.getName());
